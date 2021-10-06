@@ -1,7 +1,7 @@
 # To Do List: Demo Fullstack application 📝
 
 **Proyecto Web Fullstack**   
-`MongoDB`, `JPA`, `Hibernate`, `Spring Boot`, `Spring Data`, `TypeScript`, `Angular`.  
+`MongoDB`, `JPA`, `Hibernate`, `Spring Boot`, `Spring Data MongoDB`, `TypeScript`, `Angular`.  
 ## Backend 🛠️
 ___  
 * [Java 8](https://www.oracle.com/java/technologies/downloads/#java8) - Java SE Development Kit 8
@@ -41,10 +41,10 @@ The app will automatically reload if you change any of the source files.
 ## Description
 The To Do List Demo Fullstack is a fully fledged sample application.
 It shows how to design an application with MongoDB - Spring Boot - Spring Data - Angular from ground up.
-- [...](): ...
+- [Tarea](): ...
 - [...](): ... 
 
-## If you find a bug or want to suggest an improvement :rocket:
+## If you find a bug or want to suggest an improvement 👓
 Please feel free to report issues here: 
 [https://github.com/popehiflo/todolist-mongo-spring-angular/issues](https://github.com/popehiflo/todolist-mongo-spring-angular/issues)
 ## Licencia 📄
