@@ -1,9 +1,11 @@
-<h1 class="container">To Do List - MongoDB + Spring Boot + Angular</h1>
 
-<div class="container py-5">
-  <div class="row">
+
+<div class="container py-2">
+  <h1>To Do List - MongoDB + Spring Boot + Angular</h1>
+
+  <div class="row mt-5">
     <div class="col-md-6">
-      <h3>Lista de tareas</h3>
+      <h3>¡Cosas por hacer!</h3>
       <div *ngFor="let tarea of tareas" class="card mb-3">
         <div class="card-body">
           <div class="d-flex justify-content-between">
@@ -11,27 +13,41 @@
               {{tarea.nombre}}
             </div>
             <div class="text-muted">
-              <i class="fa fa-edit cursor-pointer" title="Editar tarea"></i>
-              <i class="fa fa-trash ms-2 cursor-pointer" title="Eliminar tarea"></i>
+              <i class="fa fa-edit cursor-pointer" title="Editar tarea" (click)="edit(tarea)"></i>
+              <i class="fa fa-trash ms-2 cursor-pointer" title="Eliminar tarea" (click)="delete(tarea)"></i>
             </div>
           </div>
-
           <div>
             <small class="text-success" *ngIf="tarea.realizada; else noRealizada">
-              <i class="fa fa-check-square"></i>Hecha
+              <i class="fa fa-check-square"></i> Hecha
             </small>
 
             <ng-template #noRealizada>
               <small>
-                <i class="fa fa-clock"></i>Pendiente
+                <i class="fa fa-clock"></i> Pendiente
               </small>
             </ng-template>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-6">
-      <h3>Nueva tarea</h3>
+      <h3>{{tarea.id ? 'Editar' : 'Nueva'}} tarea</h3>
+      <form (ngSubmit)="createOrUpdate()">
+        <div class="mb-3 form-floating">
+          <input id="nombre" type="text" placeholder="Nombre" name="nombre" class="form-control" [(ngModel)]="tarea.nombre" >
+          <label for="nombre">¿Qué haremos?</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input id="realizada" type="checkbox" class="form-check-input" name="realizada" [(ngModel)]="tarea.realizada" >
+          <label for="realizada" class="form-check-label">Realizada</label>
+        </div>
+        <div class="text-end">
+          <button class="btn btn-primary btn-lg">Guardar</button>
+        </div>
+      </form>
     </div>
+
   </div>
 </div>
