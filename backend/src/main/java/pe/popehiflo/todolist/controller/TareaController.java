@@ -8,6 +8,7 @@ import pe.popehiflo.todolist.repository.TareaRepository;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/tareas")
 public class TareaController {
