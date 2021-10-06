@@ -36,12 +36,12 @@ ng serve
 ```    
 Navigate to `http://localhost:4200/`  
 The app will automatically reload if you change any of the source files.   
-![Screenshot](./frontend/src/assets/images/ui.jpg?raw=true)  
+![Screenshot](./frontend/src/assets/images/ui.png?raw=true)  
 
 ## Description
 The To Do List Demo Fullstack is a fully fledged sample application.
 It shows how to design an application with MongoDB - Spring Boot - Spring Data - Angular from ground up.
-- [Tarea](): ...
+- [Tarea](backend/src/main/java/pe/popehiflo/todolist/model): range of all taks to do
 - [...](): ... 
 
 ## If you find a bug or want to suggest an improvement 👓
