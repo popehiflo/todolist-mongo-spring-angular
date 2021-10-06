@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import pe.popehiflo.todolist.model.Tarea;
 
 @Repository
-public interface TareaRepository  extends MongoRepository<Tarea, Integer> {
+public interface TareaRepository  extends MongoRepository<Tarea, String> {
 }
